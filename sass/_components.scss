@@ -1,0 +1,28 @@
+// NAVBAR 
+.navbar {
+	
+	.logo {
+		width: 15rem;
+		height: auto;
+	}
+
+	.nav-items {
+		list-style: none;
+		display: flex;
+
+		.nav-item {
+			@include raleway-font;
+			font-size: 1.4rem;
+			font-weight: 400;
+
+			a {
+				color: $color-white;
+				text-decoration: none;
+			}
+
+			&:not(:last-child){
+				margin-right: 5rem;
+			}
+		}
+	}
+}
