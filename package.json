@@ -1,0 +1,17 @@
+{
+  "name": "fylo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch sass -o css --recursive --output-style compressed",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver scss"
+  },
+  "author": "Pop Stefan",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
