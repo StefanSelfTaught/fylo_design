@@ -102,7 +102,7 @@
 
 	&__benefits {
 		width: 90%;
-		margin: 0 auto 30rem auto;
+		margin: 0 auto 20rem auto;
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
@@ -137,5 +137,65 @@
 		font-size: 1.4rem;
 		padding: .4rem;
 		letter-spacing: .5px;
+	}
+
+	&__testimonials {
+		margin-bottom: 10rem;
+		padding-bottom: 10rem;
+		width: 85%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+		grid-template-rows: 1fr;
+		grid-column-gap: 3rem;
+		position: relative;
+
+		&-quotes {
+			position: absolute;
+			top: -3rem;
+			left: -1rem;
+			// z-index: -1;
+		}
+
+		&-box {
+			background-color: $color-primary-4;
+			border-radius: 5px;
+			box-shadow: 5px 5px 4px 4px rgba(28,36,49,0.85);
+			padding: 4rem 3rem 2rem 3rem;
+
+			.impr {
+				letter-spacing: .5px;
+				font-size: 1.35rem;
+				line-height: 1.8;
+			}
+
+			&-review {
+				margin-top: 2rem;
+				display: flex;
+				align-content: center;
+				align-items: center;
+			}
+
+			.user-photo {
+				border-radius: 50%;
+				width: 4rem;
+				height: auto;
+				margin-right: 1rem;
+			}
+		}	
+	}
+
+	&__review-user {
+		
+
+		&-name {
+			font-size: 1.2rem;
+			font-weight: 700;
+			margin-bottom: .5rem;
+		}
+
+		&-position {
+			font-size: .9rem;
+		}
 	}
 }
