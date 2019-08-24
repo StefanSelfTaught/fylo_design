@@ -23,6 +23,7 @@ $color-white: hsl(0, 0%, 100%);
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	line-height: 1.45;
 }
 
 html {
@@ -32,4 +33,18 @@ html {
 body {
 	background-color: $color-primary-1;
 	color: $color-white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: 1px !important;
+	@include raleway-font;
+}
+
+p {
+	letter-spacing: .6px;
+	@include raleway-font;
+}
+
+a, .btn {
+	@include raleway-font;
 }

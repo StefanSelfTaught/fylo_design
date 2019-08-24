@@ -1,11 +1,29 @@
-// CONTAINER
-.container {
-	max-width: 144rem;
-	margin: 4rem auto;
+header {
+	background-color: $color-primary-2;	
 }
 
 .navbar {
+	max-width: 90%;
+	margin: 0 auto;
+	padding-top: 4rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center; 
+}
+
+.intro { 
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+  	background: url("../images/bg-curvy-desktop.svg") no-repeat;
+  	background-size: contain;
+ 	background-position: center bottom;
+	padding-bottom: 15rem;
+}
+
+.features {
+
 }
