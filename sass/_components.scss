@@ -202,12 +202,66 @@
 	background-color: $color-primary-2;
 	box-shadow: 5px 5px 12px 2px rgba(11,21,35,0.95);
 	border-radius: 10px;
-	padding: 10rem;
-	width: 65%;
-	margin: 0 auto;
+	padding: 5rem 0rem;
 	position: absolute;
 	top: -15rem;
-	left: 20rem;
+	left: 10rem;
+
+	&__text {
+		font-size: 3rem;
+		text-align: center;
+		margin-bottom: 1.5rem;
+	}
+
+	&__paragraph {
+		font-size: 1.45rem;
+		// width: 65%;
+		// text-align: center;
+		margin: 0 auto 4rem auto;
+	}
+
+	&__texts {
+		width: 90%;
+		text-align: center;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+	}
+
+	&__signup {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__input {
+		text-indent: 4rem;
+		flex: 0 0 55%;
+		margin-right: 3rem;
+		border-radius: 100px;
+		border: none;
+		outline: none;
+		padding: 1.5rem 0;
+
+		&::placeholder {
+			@include raleway-font;
+			color: #ccc;
+			font-weight: 700;
+		}
+	}
+
+	&__btn-cta {
+		@include raleway-font;
+		color: $color-white;
+		border: none;
+		outline: none;
+		padding: 1.5rem 3.5rem;
+		border-radius: 100px;
+		font-weight: 700;
+		background: linear-gradient(to right, $color-accent-1, $color-accent-2);
+	}
 }
 
 // ----- FOOTER-SECTION -----
