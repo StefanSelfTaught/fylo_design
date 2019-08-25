@@ -140,10 +140,8 @@
 	}
 
 	&__testimonials {
-		margin-bottom: 10rem;
-		padding-bottom: 10rem;
 		width: 85%;
-		margin: 0 auto;
+		margin: 0rem auto 40rem auto;
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 		grid-template-rows: 1fr;
@@ -196,6 +194,118 @@
 
 		&-position {
 			font-size: .9rem;
+		}
+	}
+}
+// ----- MAIL-SECTION -----
+.email {
+	background-color: $color-primary-2;
+	box-shadow: 5px 5px 12px 2px rgba(11,21,35,0.95);
+	border-radius: 10px;
+	padding: 10rem;
+	width: 65%;
+	margin: 0 auto;
+	position: absolute;
+	top: -15rem;
+	left: 20rem;
+}
+
+// ----- FOOTER-SECTION -----
+.footer {
+	background-color: $color-primary-3;
+	padding: 20rem 0 5rem 0;
+	position: relative;
+
+	&__content {
+		width: 83%;
+		margin: 0 auto;
+		display: grid;
+		grid-column-gap: 1rem;
+		justify-items: center;
+  		grid-template-columns: 2fr 1.5fr 1fr 1fr 1fr;
+  		grid-template-rows: 0.5fr 1fr;
+  		grid-template-areas: "Logo Logo Logo Logo Logo";
+	}
+
+	&__location {
+		font-size: 1.35rem;
+		position: relative;
+	}
+
+	&__logo {
+		width: 15rem;
+		grid-area: Logo;
+		justify-self: start;
+	}
+
+	&__location-img {
+		position: absolute;
+		top: 0;
+		left: -3rem;
+	}
+
+	&__contact {
+		font-size: 1.3rem;
+		
+		p {
+			margin-bottom: 2rem;
+		}
+
+		img {
+			margin-right: 2rem;
+		}
+	}
+
+	&__links {
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			margin-bottom: 1.4rem;
+		}
+
+		a {
+			color: $color-white;
+			text-decoration: none;
+			font-size: 1.5rem;
+		}
+	}
+
+	&__links2 {
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			margin-bottom: 1.4rem;
+		}
+
+		a {
+			color: $color-white;
+			text-decoration: none;
+			font-size: 1.5rem;
+		}
+	}
+
+	&__social {
+		font-size: 1.5rem;
+		
+		.fa-facebook-f {
+			padding: .8rem 1.2rem .8rem 1.2rem;
+		}
+
+		i {
+			border: 1px solid $color-white;
+			border-radius: 150%;
+			padding: .8rem;
+			margin-right: 1rem;
 		}
 	}
 }
