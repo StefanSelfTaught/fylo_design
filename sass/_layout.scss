@@ -24,6 +24,115 @@ header {
 	padding-bottom: 15rem;
 }
 
+
 .features {
 
 }
+
+.box {
+	@include raleway-font;
+	width: 65%;
+	margin: 0 auto;
+	text-align: center;
+	display: grid; 
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	grid-template-rows: 1fr 1fr; 
+	grid-column-gap: 10rem;
+	grid-row-gap: 10rem;
+	margin-bottom: 15rem;
+}
+
+.benefits {
+	width: 90%;
+	margin: 0 auto 20rem auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	
+	@media only screen and (max-width: 50rem) {
+		flex-direction: column;
+		width: 100%;
+		margin: 0 auto 17rem auto;
+		justify-content: center;
+		align-items: center;
+ 	}
+}
+
+.testimonials {
+	width: 85%;
+	margin: 0rem auto 7rem auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	grid-template-rows: 1fr;
+	grid-column-gap: 3rem;
+	position: relative;
+	@media only screen and (max-width: 53.12em) {
+		width: 80%;
+		grid-column-gap: 4.4rem;
+		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+		grid-row-gap: 3rem;
+  	}
+}
+
+.email {
+	background-color: $color-primary-2;
+	box-shadow: 5px 5px 12px 2px rgba(11,21,35,0.95);
+	border-radius: 10px;
+	padding: 5rem 0rem;
+	width: 90rem;
+	margin: 0 auto;
+	top: 14rem;
+	position: relative;
+	z-index: 99;
+
+	@media only screen and (max-width: $bp-large) {
+		width: 85rem;
+  	}
+
+  	@media only screen and (max-width: 50rem) {
+		width: 78rem;
+ 	}	
+}
+
+.footer {
+	background-color: $color-primary-3;
+	padding: 25rem 0 5rem 0;
+}
+
+.footer-content {
+	width: 83%;
+	margin: 0 auto;
+	display: grid;
+	grid-column-gap: 1rem;
+	justify-items: center;
+  	grid-template-columns: 2fr 1.5fr 1fr 1fr 1fr;
+  	grid-template-rows: 0.5fr 1fr;
+  	grid-template-areas: "Logo Logo Logo Logo Logo";
+
+  	@media only screen and (max-width: $bp-largest) {
+		grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
