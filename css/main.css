@@ -14,6 +14,12 @@ html {
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 45%; } }
+  @media only screen and (max-width: 31.25em) {
+    html {
+      font-size: 40%; } }
 
 body {
   background-color: #181f2a;
@@ -74,10 +80,9 @@ header {
   @media only screen and (max-width: 50rem) {
     .benefits {
       flex-direction: column;
-      width: 100%;
-      margin: 0 auto 17rem auto;
-      justify-content: center;
-      align-items: center; } }
+      align-items: center;
+      align-content: center;
+      margin: 0 auto 17rem auto; } }
 
 .testimonials {
   width: 85%;
@@ -107,9 +112,21 @@ header {
   @media only screen and (max-width: 68.75em) {
     .email {
       width: 85rem; } }
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 50em) {
     .email {
       width: 78rem; } }
+  @media only screen and (max-width: 45em) {
+    .email {
+      width: 65rem; } }
+  @media only screen and (max-width: 34.3em) {
+    .email {
+      width: 59rem; } }
+  @media only screen and (max-width: 28.1em) {
+    .email {
+      width: 53rem; } }
+  @media only screen and (max-width: 25em) {
+    .email {
+      width: 49rem; } }
 
 .footer {
   background-color: #0b1523;
@@ -149,6 +166,12 @@ header {
 .intro__img {
   width: 63rem;
   height: auto; }
+  @media only screen and (max-width: 26.25rem) {
+    .intro__img {
+      width: 55rem; } }
+  @media only screen and (max-width: 25em) {
+    .intro__img {
+      width: 45rem; } }
 
 .intro__info {
   font-family: 'Raleway', sans-serif; }
@@ -161,6 +184,12 @@ header {
     @media only screen and (max-width: 50rem) {
       .intro__info h1 {
         width: 70%; } }
+    @media only screen and (max-width: 41em) {
+      .intro__info h1 {
+        width: 80%; } }
+    @media only screen and (max-width: 25em) {
+      .intro__info h1 {
+        width: 90%; } }
   .intro__info p {
     font-size: 1.6rem;
     width: 42.5%;
@@ -169,6 +198,12 @@ header {
     @media only screen and (max-width: 50rem) {
       .intro__info p {
         width: 50%; } }
+    @media only screen and (max-width: 41em) {
+      .intro__info p {
+        width: 70%; } }
+    @media only screen and (max-width: 25em) {
+      .intro__info p {
+        width: 80%; } }
 
 .intro__btn-cta {
   font-family: 'Raleway', sans-serif;
@@ -207,30 +242,62 @@ header {
   @media only screen and (max-width: 50em) {
     .features__img-productive {
       width: 60rem;
-      margin-right: 0rem;
+      margin-right: 0;
       margin-bottom: 7rem; } }
-
-.features__productive h2 {
-  width: 40rem;
-  font-size: 3rem;
-  line-height: 1.4;
-  margin-bottom: 2.3rem; }
-  @media only screen and (max-width: 53.12em) {
-    .features__productive h2 {
+  @media only screen and (max-width: 26.25rem) {
+    .features__img-productive {
       width: 53rem; } }
-  @media only screen and (max-width: 50em) {
-    .features__productive h2 {
-      width: 55rem;
-      margin: 0 auto;
-      margin-bottom: 2.3rem; } }
+  @media only screen and (max-width: 25em) {
+    .features__img-productive {
+      width: 45rem; } }
 
-.features__productive p {
-  font-size: 1.4rem;
-  width: 50rem;
-  margin-bottom: 2rem; }
-  @media only screen and (max-width: 50em) {
-    .features__productive p {
-      width: 70rem; } }
+.features__productive {
+  width: 85%;
+  margin: 0 auto; }
+  @media only screen and (max-width: 25em) {
+    .features__productive {
+      width: 100%; } }
+  .features__productive h2 {
+    width: 40rem;
+    font-size: 3rem;
+    line-height: 1.4;
+    margin-bottom: 2.3rem; }
+    @media only screen and (max-width: 53.12em) {
+      .features__productive h2 {
+        width: 53rem; } }
+    @media only screen and (max-width: 50em) {
+      .features__productive h2 {
+        width: 55rem;
+        margin: 0 auto;
+        margin-bottom: 2.3rem; } }
+    @media only screen and (max-width: 34.3em) {
+      .features__productive h2 {
+        font-size: 2.8rem; } }
+    @media only screen and (max-width: 26.25rem) {
+      .features__productive h2 {
+        width: 52rem; } }
+    @media only screen and (max-width: 25em) {
+      .features__productive h2 {
+        width: 52rem; } }
+  .features__productive p {
+    font-size: 1.4rem;
+    width: 50rem;
+    margin-bottom: 2rem; }
+    @media only screen and (max-width: 50em) {
+      .features__productive p {
+        width: 70rem; } }
+    @media only screen and (max-width: 41.8em) {
+      .features__productive p {
+        width: 63rem; } }
+    @media only screen and (max-width: 34.3em) {
+      .features__productive p {
+        width: 55rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .features__productive p {
+        width: 50rem; } }
+    @media only screen and (max-width: 25em) {
+      .features__productive p {
+        width: 46rem; } }
 
 .features .box-hidden {
   display: none; }
@@ -250,6 +317,9 @@ header {
   position: absolute;
   top: -3rem;
   left: -1rem; }
+  @media only screen and (max-width: 25em) {
+    .features__testimonials-quotes {
+      width: 5.5rem; } }
 
 .features__testimonials-box {
   background-color: #202a3c;
@@ -297,6 +367,18 @@ header {
   @media only screen and (max-width: 68.75em) {
     .email__paragraph {
       width: 65rem; } }
+  @media only screen and (max-width: 45em) {
+    .email__paragraph {
+      width: 59rem; } }
+  @media only screen and (max-width: 41em) {
+    .email__paragraph {
+      width: 55rem; } }
+  @media only screen and (max-width: 28.1em) {
+    .email__paragraph {
+      width: 50rem; } }
+  @media only screen and (max-width: 25em) {
+    .email__paragraph {
+      width: 43rem; } }
 
 .email__texts {
   width: 90%;
@@ -311,6 +393,11 @@ header {
 .email__signup {
   display: flex;
   justify-content: center; }
+  @media only screen and (max-width: 31.25em) {
+    .email__signup {
+      flex-direction: column;
+      align-items: center;
+      align-content: center; } }
 
 .email__input {
   text-indent: 4rem;
@@ -320,6 +407,14 @@ header {
   border: none;
   outline: none;
   padding: 1.5rem 0; }
+  @media only screen and (max-width: 45em) {
+    .email__input {
+      flex: 0 0 50%; } }
+  @media only screen and (max-width: 31.25em) {
+    .email__input {
+      width: 75%;
+      margin: 0 0 3rem 0;
+      padding: 2rem 0; } }
   .email__input::placeholder {
     font-family: 'Raleway', sans-serif;
     color: #ccc;
@@ -332,8 +427,20 @@ header {
   outline: none;
   padding: 1.5rem 3.5rem;
   border-radius: 100px;
-  font-weight: 700;
+  font-weight: 400;
   background: linear-gradient(to right, #65e2d9, #339ecc); }
+  @media only screen and (max-width: 45em) {
+    .email__btn-cta {
+      padding: 1.2rem 3rem; } }
+  @media only screen and (max-width: 34.3em) {
+    .email__btn-cta {
+      padding: 1.2rem 2rem;
+      font-size: 1.6rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .email__btn-cta {
+      width: 60%;
+      padding: 2rem 1rem;
+      font-size: 2rem; } }
 
 .footer__location {
   font-size: 1.35rem;
