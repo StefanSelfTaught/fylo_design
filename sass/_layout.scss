@@ -51,10 +51,9 @@ header {
 	
 	@media only screen and (max-width: 50rem) {
 		flex-direction: column;
-		width: 100%;
+  		align-items: center;
+  		align-content: center;
 		margin: 0 auto 17rem auto;
-		justify-content: center;
-		align-items: center;
  	}
 }
 
@@ -89,9 +88,26 @@ header {
 		width: 85rem;
   	}
 
-  	@media only screen and (max-width: 50rem) {
+  	@media only screen and (max-width: 50em) {
 		width: 78rem;
+ 	}
+
+ 	@media only screen and (max-width: 45em) {
+		width: 65rem;
+ 	}
+
+ 	@media only screen and (max-width: 34.3em) {
+		width: 59rem;
+  	}
+
+  	@media only screen and (max-width: 28.1em) {
+		width: 53rem;
+  	}
+
+  	@media only screen and (max-width: 25em) {
+		width: 49rem;
  	}	
+
 }
 
 .footer {

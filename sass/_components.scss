@@ -33,6 +33,14 @@
 	&__img {
 		width: 63rem;
 		height: auto;
+
+		@media only screen and (max-width: 26.25rem) {
+			width: 55rem;
+ 		}
+
+ 		@media only screen and (max-width: 25em) {
+			width: 45rem;
+ 		}
 	}
 
 	&__info {
@@ -47,6 +55,14 @@
 
 			@media only screen and (max-width: 50rem) {
 				width: 70%;
+ 			}
+
+ 			@media only screen and (max-width: 41em) {
+				width: 80%;
+  			}
+
+  			@media only screen and (max-width: 25em) {
+				width: 90%;
  			}	
 		}
 
@@ -58,6 +74,14 @@
 
 			@media only screen and (max-width: 50rem) {
 				width: 50%;
+ 			}
+
+ 			@media only screen and (max-width: 41em) {
+				width: 70%;
+  			}
+
+  			@media only screen and (max-width: 25em) {
+				width: 80%;
  			}	
 		}
 	}
@@ -113,12 +137,26 @@
 
   		@media only screen and (max-width: 50em) {
 			width: 60rem;
-			margin-right: 0rem;
+			margin-right: 0;
 			margin-bottom: 7rem;
   		}
+
+  		@media only screen and (max-width: 26.25rem) {
+			width: 53rem;
+ 		}
+
+ 		@media only screen and (max-width: 25em) {
+			width: 45rem;
+ 		}	
 	}
 
 	&__productive {
+		width: 85%;
+		margin: 0 auto;	
+	
+		@media only screen and (max-width: 25em) {
+			width: 100%;
+ 		}
 
 		h2 {
 			width: 40rem;
@@ -135,6 +173,18 @@
 				margin: 0 auto;
 				margin-bottom: 2.3rem;
   			}
+
+  			@media only screen and (max-width: 34.3em) {
+				font-size: 2.8rem;
+  			}
+
+  			@media only screen and (max-width: 26.25rem) {
+				width: 52rem;
+ 			}
+
+ 			@media only screen and (max-width: 25em) {
+				width: 52rem;
+ 			}
 		}
 
 		p {
@@ -144,6 +194,22 @@
 			@media only screen and (max-width: 50em) {
 				width: 70rem;
   			}
+
+  			@media only screen and (max-width: 41.8em) {
+				width: 63rem;
+  			}
+
+  			@media only screen and (max-width: 34.3em) {
+				width: 55rem;
+  			}
+
+  			@media only screen and (max-width: 26.25em) {
+				width: 50rem;
+ 			}
+
+ 			@media only screen and (max-width: 25em) {
+				width: 46rem;
+ 			}
 		}
 	}
 
@@ -170,7 +236,10 @@
 			position: absolute;
 			top: -3rem;
 			left: -1rem;
-			// z-index: -1;
+
+			@media only screen and (max-width: 25em) {
+				width: 5.5rem;
+ 			}	
 		}
 
 		&-box {
@@ -240,6 +309,22 @@
 		@media only screen and (max-width: $bp-large) {
 			width: 65rem;
   		}
+
+  		@media only screen and (max-width: 45em) {
+			width: 59rem;
+  		}
+
+  		@media only screen and (max-width: 41em) {
+			width: 55rem;
+  		}
+
+  		@media only screen and (max-width: 28.1em) {
+			width: 50rem;
+  		}
+
+  		@media only screen and (max-width: 25em) {
+			width: 43rem;
+ 		}	
 	}
 
 	&__texts {
@@ -256,6 +341,12 @@
 	&__signup {
 		display: flex;
 		justify-content: center;
+
+		@media only screen and (max-width: $bp-smallest) {
+  			flex-direction: column;
+  			align-items: center;
+  			align-content: center;
+  		}
 	}
 
 	&__input {
@@ -266,6 +357,16 @@
 		border: none;
 		outline: none;
 		padding: 1.5rem 0;
+
+		@media only screen and (max-width: 45em) {
+			flex: 0 0 50%;
+  		}
+
+  		@media only screen and (max-width: $bp-smallest) {
+  			width: 75%;
+  			margin: 0 0 3rem 0;
+  			padding: 2rem 0;
+  		}
 
 		&::placeholder {
 			@include raleway-font;
@@ -281,8 +382,23 @@
 		outline: none;
 		padding: 1.5rem 3.5rem;
 		border-radius: 100px;
-		font-weight: 700;
+		font-weight: 400;
 		background: linear-gradient(to right, $color-accent-1, $color-accent-2);
+
+		@media only screen and (max-width: 45em) {
+			padding: 1.2rem 3rem;
+  		}
+
+  		@media only screen and (max-width: 34.3em) {
+			padding: 1.2rem 2rem;
+			font-size: 1.6rem;
+  		}
+
+  		@media only screen and (max-width: $bp-smallest) {
+  			width: 60%;
+  			padding: 2rem 1rem;
+  			font-size: 2rem;
+  		}
 	}
 }
 
