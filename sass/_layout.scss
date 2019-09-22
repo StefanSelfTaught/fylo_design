@@ -12,7 +12,7 @@ header {
 }
 
 .intro { 
-	margin-top: 3rem;
+	margin-top: 6rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -22,6 +22,13 @@ header {
   	background-size: contain;
  	background-position: center bottom;
 	padding-bottom: 15rem;
+
+	@media only screen and (max-width: $bp-smallest) {
+		background: url("../images/bg-curvy-mobile.svg") no-repeat;
+		background-size: contain;
+ 		background-position: center bottom;
+ 		padding-bottom: 15rem;
+ 	}
 }
 
 
@@ -47,7 +54,7 @@ header {
 	margin: 0 auto 20rem auto;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	
 	@media only screen and (max-width: 50rem) {
 		flex-direction: column;
@@ -65,12 +72,14 @@ header {
 	grid-template-rows: 1fr;
 	grid-column-gap: 3rem;
 	position: relative;
+
 	@media only screen and (max-width: 53.12em) {
 		width: 80%;
 		grid-column-gap: 4.4rem;
-		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 		grid-row-gap: 3rem;
   	}
+
 }
 
 .email {
@@ -78,7 +87,7 @@ header {
 	box-shadow: 5px 5px 12px 2px rgba(11,21,35,0.95);
 	border-radius: 10px;
 	padding: 5rem 0rem;
-	width: 90rem;
+	width: 94rem;
 	margin: 0 auto;
 	top: 14rem;
 	position: relative;
