@@ -94,29 +94,12 @@ header {
 	z-index: 99;
 
 	@media only screen and (max-width: $bp-large) {
-		width: 85rem;
+		width: 90%;
   	}
 
-  	@media only screen and (max-width: 50em) {
-		width: 78rem;
- 	}
-
- 	@media only screen and (max-width: 45em) {
-		width: 65rem;
- 	}
-
- 	@media only screen and (max-width: 34.3em) {
-		width: 59rem;
-  	}
-
-  	@media only screen and (max-width: 28.1em) {
-		width: 53rem;
-  	}
-
-  	@media only screen and (max-width: 25em) {
-		width: 49rem;
- 	}	
-
+  	@media only screen and (max-width: $bp-small) {
+		top: 21rem;
+  	}	
 }
 
 .footer {
@@ -125,17 +108,13 @@ header {
 }
 
 .footer-content {
-	width: 83%;
-	margin: 0 auto;
-	display: grid;
-	grid-column-gap: 1rem;
-	justify-items: center;
-  	grid-template-columns: 2fr 1.5fr 1fr 1fr 1fr;
-  	grid-template-rows: 0.5fr 1fr;
-  	grid-template-areas: "Logo Logo Logo Logo Logo";
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
 
-  	@media only screen and (max-width: $bp-largest) {
-		grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+	@media only screen and (max-width: 43.75em) {
+		flex-direction: column;
+		margin-left: 5rem;
   	}
 }
 
