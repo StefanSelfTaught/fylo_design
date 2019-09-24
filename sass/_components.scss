@@ -40,8 +40,8 @@
 		width: 63rem;
 		height: auto;
 
-		@media only screen and (max-width: 26.25em) {
-			width: 55rem;
+		@media only screen and (max-width: 28em) {
+			width: 54rem;
  		}
 
  		@media only screen and (max-width: 25em) {
@@ -99,7 +99,7 @@
 		font-weight: 700;
 		font-size: 1.8rem;
 		outline: none;
-		padding: 2rem 8rem;
+		padding: 1.6rem 8rem;
 		border-radius: 100px;
 		background: linear-gradient(to right, $color-accent-1, $color-accent-2);
 	}
@@ -132,42 +132,15 @@
 		margin-right: 4rem;
 
 		@media only screen and (max-width: 73em) {
-			width: 51rem;
-  		}
-
-  		@media only screen and (max-width: $bp-large) {
-			width: 49rem;
-  		}
-
-		@media only screen and (max-width: 60em) {
-			width: 49rem;
-  		}
-
-		@media only screen and (max-width: 59em) {
-			width: 47rem;
-  		}
-
-		@media only screen and (max-width: $bp-medium) {
-			width: 45rem;
-  		}
-
-  		@media only screen and (max-width: 53.12em) {
-			width: 42rem;
+			width: 52%;
+			height: auto;
   		}
 
   		@media only screen and (max-width: 50em) {
-			width: 60rem;
 			margin-right: 0;
-			margin-bottom: 7rem;
-  		}
-
-  		@media only screen and (max-width: 26.25em) {
-			width: 53rem;
- 		}
-
- 		@media only screen and (max-width: 25em) {
-			width: 45rem;
- 		}	
+			margin-bottom: 4rem;
+			width: 83%;
+  		}	
 	}
 
 	&__productive {
@@ -178,21 +151,13 @@
 			line-height: 1.4;
 			margin-bottom: 2.3rem;
 
-			@media only screen and (max-width: 53.12em) {
-				width: 100%;
-  			}
-
   			@media only screen and (max-width: 50em) {
 				width: 62rem;
 				margin: 0 auto;
 				margin-bottom: 2.3rem;
   			}
 
-  			@media only screen and (max-width: 26.25rem) {
-				width: 52rem;
- 			}
-
- 			@media only screen and (max-width: 25em) {
+  			@media only screen and (max-width: 28rem) {
 				width: 52rem;
  			}
 		}
@@ -203,11 +168,7 @@
 			margin-bottom: 2rem;
 
 			@media only screen and (max-width: 60em) {
-				width: 48rem;
-  			}
-
-			@media only screen and (max-width: 53.12em) {
-				width: 49rem;
+				width: 47rem;
   			}
 
 			@media only screen and (max-width: 50em) {
@@ -222,7 +183,7 @@
 				width: 55rem;
   			}
 
-  			@media only screen and (max-width: 26.25em) {
+  			@media only screen and (max-width: 28em) {
 				width: 50rem;
  			}
 		}
@@ -310,24 +271,8 @@
 		width: 85rem;
 
 		@media only screen and (max-width: $bp-large) {
-			width: 65rem;
-  		}
-
-  		@media only screen and (max-width: 45em) {
-			width: 59rem;
-  		}
-
-  		@media only screen and (max-width: 41em) {
-			width: 55rem;
-  		}
-
-  		@media only screen and (max-width: 28.1em) {
-			width: 50rem;
-  		}
-
-  		@media only screen and (max-width: 25em) {
-			width: 43rem;
- 		}	
+			width: 85%;
+  		}	
 	}
 
 	&__texts {
@@ -384,7 +329,7 @@
 		border: none;
 		outline: none;
 		font-size: 1.6rem;
-		padding: 2rem 3.5rem;
+		padding: 1.8rem 3.5rem;
 		border-radius: 100px;
 		font-weight: 700;
 		background: linear-gradient(to right, $color-accent-1, $color-accent-2);
@@ -409,27 +354,27 @@
 // ----- FOOTER-SECTION -----
 .footer {
 
-	&__location {
-		font-size: 1.35rem;
-		position: relative;
-	}
-
 	&__logo {
-		width: 15rem;
-		@media only screen and (min-width: 50em) {
-		  	grid-area: Logo;
-			justify-self: start;
-  		}
-	}
 
-	&__location-img {
-		position: absolute;
-		top: 0;
-		left: -3rem;
+		@media only screen and (max-width: 43.75em) {
+			margin-bottom: 4rem;
+  		}
+		
+		img {
+
+			@media only screen and (max-width: $bp-medium) {
+				width: 17.5rem;
+  			}
+		}
 	}
 
 	&__contact {
-		font-size: 1.3rem;
+
+		@media only screen and (max-width: 43.75em) {
+			margin-bottom: 4rem;
+  		}
+
+		font-size: 13px;
 		
 		p {
 			margin-bottom: 2rem;
@@ -441,6 +386,10 @@
 	}
 
 	&__links {
+		
+		@media only screen and (max-width: 43.75em) {
+			margin-bottom: 4rem;
+  		}
 
 		ul {
 			list-style-type: none;
@@ -455,12 +404,16 @@
 		a {
 			color: $color-white;
 			text-decoration: none;
-			font-size: 1.5rem;
+			font-size: 13px;
 		}
 	}
 
 	&__links2 {
 
+		@media only screen and (max-width: 43.75em) {
+			margin-bottom: 4rem;
+  		}
+
 		ul {
 			list-style-type: none;
 			margin: 0;
@@ -474,26 +427,27 @@
 		a {
 			color: $color-white;
 			text-decoration: none;
-			font-size: 1.5rem;
+			font-size: 13px;
 		}
 	}
 
 	&__social {
-		font-size: 1.5rem;
+
+		@media only screen and (max-width: 43.75em) {
+			align-self: center;
+  		}
+
+		font-size: 15px;
 		
 		.fa-facebook-f {
-			padding: .8rem 1rem .8rem 1rem;
+			padding: 1.3rem 1.5rem 1.3rem 1.5rem;
 		}
 
 		i {
 			border: 1px solid $color-white;
 			border-radius: 150%;
-			padding: .8rem;
+			padding: 1.2rem;
 			margin-right: 1rem;
-
-			@media only screen and (max-width: $bp-largest) {
-				margin-right: .3rem;
-  			}
 		}
 	}
 }
