@@ -21,7 +21,7 @@ header {
   	background: url("../images/bg-curvy-desktop.svg") no-repeat;
   	background-size: contain;
  	background-position: center bottom;
-	padding-bottom: 15rem;
+	padding-bottom: 20rem;
 
 	@media only screen and (max-width: $bp-smallest) {
 		background: url("../images/bg-curvy-mobile.svg") no-repeat;
@@ -29,11 +29,6 @@ header {
  		background-position: center bottom;
  		padding-bottom: 15rem;
  	}
-}
-
-
-.features {
-
 }
 
 .box {
@@ -46,7 +41,11 @@ header {
 	grid-template-rows: 1fr 1fr; 
 	grid-column-gap: 10rem;
 	grid-row-gap: 10rem;
-	margin-bottom: 15rem;
+	margin-bottom: 20rem;
+
+	@media only screen and (max-width: 920px) {
+		overflow: hidden;
+	}
 }
 
 .benefits {
@@ -80,6 +79,10 @@ header {
 		grid-row-gap: 3rem;
   	}
 
+  	@media only screen and (max-width: $bp-small) {
+		margin: 0 auto;
+  	}
+
 }
 
 .email {
@@ -104,7 +107,11 @@ header {
 
 .footer {
 	background-color: $color-primary-3;
-	padding: 25rem 0 5rem 0;
+	padding: 25rem 0 7rem 0;
+
+	@media only screen and (max-width: $bp-small) {
+		padding: 30rem 0 7rem 0;
+  	}
 }
 
 .footer-content {

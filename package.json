@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --watch sass -o css --recursive",
+    "scss": "node-sass --watch sass -o css --recursive --output-style compressed",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver scss"
   },
